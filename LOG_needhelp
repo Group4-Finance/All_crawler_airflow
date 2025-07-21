@@ -1,0 +1,30 @@
+*** Log file does not exist: /dataflow/logs/vix/vix/2025-07-21T10:00:00+00:00/1.log
+*** Fetching from: http://airflow_All_crawler.1:8793/log/vix/vix/2025-07-21T10:00:00+00:00/1.log
+
+[2025-07-21, 10:30:13 CST] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: vix.vix scheduled__2025-07-21T10:00:00+00:00 [queued]>
+[2025-07-21, 10:30:13 CST] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: vix.vix scheduled__2025-07-21T10:00:00+00:00 [queued]>
+[2025-07-21, 10:30:13 CST] {taskinstance.py:1249} INFO - 
+--------------------------------------------------------------------------------
+[2025-07-21, 10:30:13 CST] {taskinstance.py:1250} INFO - Starting attempt 1 of 2
+[2025-07-21, 10:30:13 CST] {taskinstance.py:1251} INFO - 
+--------------------------------------------------------------------------------
+[2025-07-21, 10:30:14 CST] {taskinstance.py:1270} INFO - Executing <Task(DockerOperator): vix> on 2025-07-21 10:00:00+00:00
+[2025-07-21, 10:30:14 CST] {standard_task_runner.py:52} INFO - Started process 146 to run task
+[2025-07-21, 10:30:14 CST] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'vix', 'vix', 'scheduled__2025-07-21T10:00:00+00:00', '--job-id', '147', '--raw', '--subdir', 'DAGS_FOLDER/vix.py', '--cfg-path', '/tmp/tmpeu8mv6da', '--error-file', '/tmp/tmp80zee52b']
+[2025-07-21, 10:30:14 CST] {standard_task_runner.py:80} INFO - Job 147: Subtask vix
+[2025-07-21, 10:30:14 CST] {logging_mixin.py:109} INFO - Running <TaskInstance: vix.vix scheduled__2025-07-21T10:00:00+00:00 [running]> on host airflow_All_crawler.1
+[2025-07-21, 10:30:14 CST] {taskinstance.py:1446} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=FinMind
+AIRFLOW_CTX_DAG_ID=vix
+AIRFLOW_CTX_TASK_ID=vix
+AIRFLOW_CTX_EXECUTION_DATE=2025-07-21T10:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2025-07-21T10:00:00+00:00
+[2025-07-21, 10:30:14 CST] {docker.py:373} INFO - Pulling docker image winnie0o0y/crawler:0.0.1
+[2025-07-21, 10:30:15 CST] {docker.py:387} INFO - 0.0.1: Pulling from winnie0o0y/crawler
+[2025-07-21, 10:30:16 CST] {docker.py:382} INFO - Digest: sha256:bc77192048450f7a818c5213862bc557824de4fc1577174f29089e9e71d40d80
+[2025-07-21, 10:30:16 CST] {docker.py:382} INFO - Status: Image is up to date for winnie0o0y/crawler:0.0.1
+[2025-07-21, 10:30:16 CST] {docker.py:248} INFO - Starting docker container from image winnie0o0y/crawler:0.0.1
+[2025-07-21, 10:30:18 CST] {docker.py:310} INFO - Loading .env environment variables...
+[2025-07-21, 10:30:20 CST] {taskinstance.py:1278} INFO - Marking task as SUCCESS. dag_id=vix, task_id=vix, execution_date=20250721T100000, start_date=20250721T103013, end_date=20250721T103020
+[2025-07-21, 10:30:20 CST] {local_task_job.py:154} INFO - Task exited with return code 0
+[2025-07-21, 10:30:20 CST] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
